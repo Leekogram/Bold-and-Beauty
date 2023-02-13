@@ -1,0 +1,93 @@
+
+// Light bg
+@each $color, $value in $theme-soft-colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+@each $color, $value in $theme-colors {
+  .bg-#{$color}-after:after {
+    background-color: $value;
+  }
+}
+
+
+// Dark bg
+@each $color, $value in $theme-dark-colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+}
+
+
+@each $color, $value in $theme-gradient-colors {
+  .bg-#{$color} {
+    background: linear-gradient(180deg, $value, rgba($white, 0) 100%) !important;
+  }
+}
+
+
+@each $color, $value in $theme-colors {
+  .bg-#{$color}-gradient-dark {
+    background: linear-gradient(180deg, $value, darken($value, 15%) 100%) !important;
+  }
+}
+
+
+@each $color, $value in $theme-gradient-colors {
+  .bg-#{$color}-reverse {
+    background: linear-gradient(0deg, $value, rgba($white, 0) 100%) !important;
+
+  }
+}
+
+
+
+
+// Bg Link Hover
+// Light bg
+@each $color, $value in $theme-colors {
+  a.bg-#{$color} {
+    &:hover {
+      background: darken($value, 8%) !important;
+    }
+  }
+}
+
+
+
+.bg-gray-gradient-reverse {
+    background: linear-gradient(0deg, rgba($gray-100, 1), rgba(255, 255, 255, 0) 100%) !important;
+}
+
+
+
+@each $color, $value in $grays {
+  .bg-#{$color} {
+    background: $value !important;
+  }
+}
+
+
+.bg-cover {
+    background-size: cover;
+}
+
+.bg-right-center {
+    background-position: center right;
+}
+
+.bg-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.bg-center {
+    background-position: center;
+}
+
+@include media-breakpoint-up(lg) {
+  .bg-fixed {
+    background-attachment: fixed;
+  }
+}

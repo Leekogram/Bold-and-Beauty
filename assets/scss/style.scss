@@ -1,0 +1,79 @@
+/*!
+ * Mombo
+ * Copyright pxdraft.
+*/
+
+
+
+
+// Custom fonts
+@import "custom/variables";
+
+@import "core/variables";
+@import "core/components/utilitie";
+
+// Vendor
+@import "../vendor/bootstrap/scss/bootstrap.scss";
+@import "../vendor/bootstrap/icons/bootstrap-icons.css";
+@import "../vendor/fontawesome/css/all.min.css";
+@import "../vendor/themify-icons/themify-icons.css";
+@import "../vendor/magnific/magnific-popup.css";
+@import "../vendor/owl-carousel/css/owl.carousel.min.css";
+@import "../vendor/et-line/style.css";
+@import "../vendor/wow/animate.css";
+
+
+
+// Header
+@import "core/header/header";
+
+
+// Footer
+@import "core/footer/footer";
+
+// Custom fonts
+@import "custom/font";
+
+
+// Components
+@import "core/components/base";
+@import "core/components/wrapper";
+@import "core/components/background";
+@import "core/components/breadcrumb";
+@import "core/components/spinner";
+@import "core/components/buttons";
+@import "core/components/width";
+@import "core/components/card";
+@import "core/components/height";
+@import "core/components/section";
+@import "core/components/section-heading";
+@import "core/components/avatar";
+@import "core/components/icon";
+@import "core/components/image";
+@import "core/components/svg";
+@import "core/components/link";
+@import "core/components/color";
+@import "core/components/border";
+@import "core/components/font-wight";
+@import "core/components/social";
+@import "core/components/hover";
+@import "core/components/mask";
+@import "core/components/z-index";
+@import "core/components/text-overflow";
+@import "core/components/effect";
+@import "core/components/tabs";
+@import "core/components/owl";
+@import "core/components/shadow";
+@import "core/components/form";
+@import "core/components/nav";
+@import "core/components/list";
+@import "core/components/process-bar";
+@import "core/components/portfolio";
+@import "core/components/count-down";
+@import "core/components/media";
+@import "core/components/page-heading";
+@import "core/components/device";
+
+
+// Custom styles (User's file)
+@import "custom/styles";

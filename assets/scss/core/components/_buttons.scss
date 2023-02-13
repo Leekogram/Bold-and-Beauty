@@ -1,0 +1,49 @@
+@each $color, $value in $theme-colors {
+    .btn-#{$color}-light {
+        background-color: rgba($value, 0.2);
+        color: $value;
+
+        &:hover {
+            background-color: $value;
+            color: color-contrast($value);
+        }
+    }
+}
+
+@each $color, $value in $theme-colors {
+  .btn-#{$color} {
+    &:hover,
+    &:focus,
+    &:active,
+    &.active,
+    &.show {
+        background-color: darken($value, 7%);
+        border-color: darken($value, 7%);
+        box-shadow: 0 .25rem .25rem .125rem rgba($value, .1), 0 .375rem .75rem -.125rem rgba($value, .4);
+    }
+  }
+}
+
+
+.btn-white {
+    border-color: $gray-400;
+}
+
+
+.btn-icon {
+    .btn-inner--text {
+        &:not(:last-child) {
+            margin-right: .5em;
+        }
+        &:not(:first-child) {
+            margin-left: .5em;
+        }
+    }
+}
+
+.btn {
+    .spinner-grow-sm,
+    .spinner-border-sm {
+        vertical-align: middle;
+    }
+}

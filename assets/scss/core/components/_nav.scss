@@ -1,0 +1,23 @@
+.nav-sub {
+	.nav-icon {
+		width: 1.25rem;
+	    font-size: .8125rem;
+	    line-height: 1.4;
+	    opacity: .8;
+	    text-align: center;
+	    margin-right: .3rem;
+	}
+	.nav-item {
+		width: 100%;
+	}
+	.nav-link {
+		color: $body-color;
+		padding: 8px 0;
+		&:hover {
+			color: $primary;
+		}
+		&.active {
+			color: $primary;
+		}
+	}
+}

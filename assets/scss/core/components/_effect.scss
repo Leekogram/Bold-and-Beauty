@@ -1,0 +1,192 @@
+.effect-section {
+    position: relative;
+    overflow: hidden;
+}
+
+/* particles-box
+---------------------------*/
+.particles-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0.2;
+    pointer-events: none;
+}
+
+
+/* Section Effect
+------------------------*/
+.effect-bottom {
+    position: absolute;
+    bottom:0;
+    left: 0;
+    right: 0;
+}
+
+
+/* Scale Effect
+------------------------*/
+.scale-ani {
+    animation: scale-animation 5s linear infinite;
+}
+
+@keyframes scale-animation {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.8);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+@include media-breakpoint-up(lg) {
+    .sticky-lg-top-header {
+        top: 100px;
+    }
+}
+
+
+.effect-skew {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    right: 31%;
+    transform: skew(-35deg);
+    border-radius: 0 0 180px 0;
+    pointer-events: none;
+    @include media-breakpoint-down(sm) {
+        right: -40%;
+        left: -90%;
+    }
+}
+
+.effect-radius {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: 0% 100% 20% 80% / 73% 0% 100% 27%;
+
+    @include media-breakpoint-down(sm) {
+        bottom: 30px;
+        left: -50px;
+        right: -40px;
+    }
+}
+
+.effect-shape {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+    &:after {
+        content: "";
+        position: absolute;
+        bottom: -40%;
+        background: linear-gradient(to left, rgba(255, 255, 255, 0.08), rgba(2, 2, 2, 0.05));
+        right: -25%;
+        margin: auto;
+        transform: skew(30deg);
+        top: -40%;
+        left: 45%;
+        border-radius: 50%;
+    }
+}
+
+.effect-radius-bg {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+
+    > div {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 23rem;
+        height: 23rem;
+        border-radius: 100%;
+        background-image: linear-gradient(-180deg, rgba(227, 221, 246, 0.1) 0%, rgba(227, 221, 246, 0.2) 65%, rgba(227, 221, 246, 0.1) 100%);
+        z-index: -1;
+    }
+
+    .radius-1 {
+        transform: translate(-50%, -50%) scale(0.67);
+    }
+
+    .radius-2 {
+        transform: translate(-50%, -50%) scale(1.05);
+    }
+
+    .radius-3 {
+        transform: translate(-50%, -50%) scale(1.63);
+    }
+
+    .radius-4 {
+        transform: translate(-50%, -50%) scale(2.1);
+    }
+
+    .radius-x {
+        will-change: transform;
+        animation: pulsate 3s infinite;
+    }
+}
+
+@keyframes pulsate {
+    0% {
+        opacity: 1;
+        -webkit-transform: translate(-50%, -50%) scale(0.5);
+        transform: translate(-50%, -50%) scale(0.5)
+    }
+
+    100% {
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%) scale(4);
+        transform: translate(-50%, -50%) scale(4)
+    }
+
+}
+
+
+
+.after-k:after {
+  content: "K";
+}
+
+.after-p:after {
+  content: "%";
+}
+
+.after-plus:after {
+  content: "+";
+}
+
+.after-50px {
+    position: relative;
+    &:after {
+        width: 50px;
+        height: 2px;
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        .text-center & {
+            right: 0;
+            margin: auto;
+        }
+    }
+}
