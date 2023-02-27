@@ -47,17 +47,44 @@
       .navbar-light .navbar-nav .nav-link:hover,
       .navbar-light .navbar-nav .nav-link:focus {
         overflow: hidden;
-       color: #f25767;
+        color: #fff;
       }
-      .nav-item:hover{
+      .nav-item:hover {
         background-color: #000;
-   
+
         line-height: 50px;
         color: #fff6e6;
       }
 
-    
- 
+      @-webkit-keyframes float {
+        0% {
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+          transform: translatey(0px);
+        }
+        50% {
+          box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0);
+          transform: translatey(-20px);
+        }
+        100% {
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+          transform: translatey(0px);
+        }
+      }
+
+      @keyframes float {
+        0% {
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+          transform: translatey(0px);
+        }
+        50% {
+          box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0);
+          transform: translatey(-20px);
+        }
+        100% {
+          box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0);
+          transform: translatey(0px);
+        }
+      }
 
       .firstred {
         position: absolute;
@@ -66,6 +93,10 @@
         left: 0%;
         height: 150px;
         width: 150px;
+        z-index: -1px;
+        transform: translatey(0px);
+        -webkit-animation: float 6s ease-in-out infinite;
+        animation: float 6s ease-in-out infinite;
       }
 
       .second-pink {
@@ -75,6 +106,10 @@
         left: 40%;
         height: 150px;
         width: 150px;
+        z-index: -1px;
+        transform: translatey(0px);
+        -webkit-animation: float 8s ease-in-out infinite;
+        animation: float 8s ease-in-out infinite;
       }
 
       .productsImage {
@@ -83,16 +118,16 @@
       .text-poppins-bold {
         font-family: poppins-medium;
       }
-     
+
+      
 
       body {
-        /* font-family: poppins-medium; */
+        /* font-family: poppins-medium;  */
+        scroll-behavior: smooth;
+     
       }
       .navoption {
         color: #000;
-      }
-      #sectionBgImg {
-        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1008%26quot%3b)' fill='none'%3e%3cpath d='M366.2 354.23 a0.18 0.18 0 1 0 0.36 0 a0.18 0.18 0 1 0 -0.36 0z' fill='rgba(211%2c 183%2c 20%2c 1)'%3e%3c/path%3e%3cpath d='M142.4 351.65L184.37 351.65L184.37 393.62L142.4 393.62z' stroke='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M1015.37 29.24L1049.13 29.24L1049.13 78.37L1015.37 78.37z' stroke='rgba(211%2c 183%2c 20%2c 1)'%3e%3c/path%3e%3cpath d='M628.06 88.14L629.23 88.14L629.23 89.31L628.06 89.31z' stroke='rgba(211%2c 183%2c 20%2c 1)'%3e%3c/path%3e%3cpath d='M1000.76 115.2a41.95 41.95 0 1 0 77.83 31.34z' fill='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M1327.81 266L1360.58 266L1360.58 277.99L1327.81 277.99z' stroke='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M1072.54 405.63 a17.7 17.7 0 1 0 35.4 0 a17.7 17.7 0 1 0 -35.4 0z' fill='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M165.81 177.02a1.23 1.23 0 1 0 1.04 2.24z' stroke='rgba(211%2c 183%2c 20%2c 1)'%3e%3c/path%3e%3cpath d='M1276.21 240.41a47.82 47.82 0 1 0 0.21 95.64z' stroke='rgba(211%2c 183%2c 20%2c 1)'%3e%3c/path%3e%3cpath d='M1078.51 497.67a39.14 39.14 0 1 0 67.44 39.74z' fill='rgba(211%2c 183%2c 20%2c 1)'%3e%3c/path%3e%3cpath d='M1067.39 90.51L1090.51 90.51L1090.51 107.73L1067.39 107.73z' stroke='rgba(211%2c 183%2c 20%2c 1)'%3e%3c/path%3e%3cpath d='M631.11 59.05L665.11 59.05L665.11 93.05L631.11 93.05z' stroke='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M994.88 322.05 a55.89 55.89 0 1 0 111.78 0 a55.89 55.89 0 1 0 -111.78 0z' stroke='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M1399.42 251.26L1422.16 251.26L1422.16 274L1399.42 274z' stroke='rgba(211%2c 183%2c 20%2c 1)'%3e%3c/path%3e%3cpath d='M490.53 471.45a38.98 38.98 0 1 0-69.26 35.8z' stroke='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M442.84 498.61L496.49 498.61L496.49 552.26L442.84 552.26z' fill='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M1263.39 116.44 a27.13 27.13 0 1 0 54.26 0 a27.13 27.13 0 1 0 -54.26 0z' fill='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M67.6 372.81L107.11 372.81L107.11 412.32L67.6 412.32z' fill='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M884.26 95.59a16.75 16.75 0 1 0-33.23 4.25z' fill='rgba(211%2c 183%2c 20%2c 1)'%3e%3c/path%3e%3cpath d='M877.04 35.8a33.56 33.56 0 1 0-47.34-47.59z' fill='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M1291.59 483.56 a15.45 15.45 0 1 0 30.9 0 a15.45 15.45 0 1 0 -30.9 0z' stroke='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M1248.16 89.1a24.53 24.53 0 1 0 45.78-17.62z' stroke='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M946.49 415.21L977.85 415.21L977.85 421.5L946.49 421.5z' fill='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M1217.26 232.01L1230.38 232.01L1230.38 245.13L1217.26 245.13z' stroke='rgba(211%2c 183%2c 20%2c 1)'%3e%3c/path%3e%3cpath d='M847.5 258.4L866.8 258.4L866.8 277.7L847.5 277.7z' fill='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M802.83 73.28 a11.18 11.18 0 1 0 22.36 0 a11.18 11.18 0 1 0 -22.36 0z' stroke='rgba(211%2c 183%2c 20%2c 1)'%3e%3c/path%3e%3cpath d='M240.46 322.45L273.87 322.45L273.87 355.86L240.46 355.86z' fill='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M1320.1 16.51a7.24 7.24 0 1 0 11.5-8.8z' fill='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M545.83 104.17L593.3 104.17L593.3 153.52L545.83 153.52z' stroke='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M1263.63 550.68L1275.89 550.68L1275.89 562.94L1263.63 562.94z' stroke='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3cpath d='M289.9 291.51L294.76 291.51L294.76 296.37L289.9 296.37z' fill='rgba(211%2c 183%2c 20%2c 1)'%3e%3c/path%3e%3cpath d='M1219.56 325.66L1248.57 325.66L1248.57 371.34L1219.56 371.34z' fill='rgba(211%2c 183%2c 20%2c 1)'%3e%3c/path%3e%3cpath d='M555.93 528.78 a36.86 36.86 0 1 0 73.72 0 a36.86 36.86 0 1 0 -73.72 0z' fill='rgba(0%2c 12%2c 1%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1008'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
       }
 
       @media screen and (max-width: 600px) {
@@ -108,7 +143,7 @@
         .second-pink {
           position: absolute;
 
-          top: 65%;
+          top: 52%;
           left: 70%;
           height: 80px;
           width: 80px;
@@ -235,7 +270,7 @@
                 src="./assets/img/images/First red.png"
                 title="first red"
                 alt="rose"
-                class="rose"
+                class="rose moving"
               />
             </div>
             <div class="second-pink rotate-image">
@@ -243,7 +278,7 @@
                 src="./assets/img/images/Second pink.png"
                 title="second pink"
                 alt="second pink"
-                class="second pink"
+                class="second pink moving"
               />
             </div>
 
@@ -272,7 +307,10 @@
                   <span class="typed" data-elements="Salon & Spa"></span>
                 </h1>
                 <p class="text-black">
-                  A full-service beauty salon and spa dedicated to helping you look and feel your best. Our salon offers a welcoming and relaxing environment where you can unwind and indulge in a variety of beauty services.
+                  A full-service beauty salon and spa dedicated to helping you
+                  look and feel your best. Our salon offers a welcoming and
+                  relaxing environment where you can unwind and indulge in a
+                  variety of beauty services.
                 </p>
                 <div class="pt-3">
                   <a
@@ -352,7 +390,6 @@
               </div>
             </div>
           </div>
-
         </section>
         <img
           src="./assets/img/images/New flawa.png"
@@ -382,7 +419,8 @@
                   Our Services & Sections
                 </h3>
                 <div class="lead text-black">
-                  At Bold and Beautiful, we offer a wide range of services to meet all of your beauty needs. Our salon is divided into different sections to ensure that you have a comfortable and personalized experience. Our hair section offers haircuts, color, highlights, balayage, and keratin treatments. Our makeup section provides makeup application and lessons. Our facial section offers a variety of facials, including anti-aging, acne, and hydrating treatments. Our massage section offers Swedish, deep tissue, and hot stone massages, among others. We also offer waxing, eyelash extensions, and special packages for weddings, proms, and other special occasions.
+                  At Bold and Beautiful, we offer a wide range of services to
+                  meet all of your beauty needs.
                 </div>
               </div>
             </div>
@@ -407,10 +445,7 @@
               <div class="col-sm-6 col-lg-4 grid-item branding">
                 <div class="hover-scale hover-bottom-show">
                   <div class="hover-scale-in rounded-3">
-                    <a
-                      href="./sections/Hairstyling.html"
-                     
-                    >
+                    <a href="./sections/Hairstyling.html">
                       <img
                         src="./assets/img/images/staff hair.png"
                         title=""
@@ -420,12 +455,16 @@
                   </div>
                   <div class="bg-warning p-3 m-2 rounded-3">
                     <div class="nav">
-                      <a href="./sections/Hairstyling.html" class="small font-w-600 me-2 text-white"
+                      <a
+                        href="./sections/Hairstyling.html"
+                        class="small font-w-600 me-2 text-white"
                         >Learn more...</a
                       >
                     </div>
                     <h5 class="mt-1 mb-0">
-                      <a class="text-reset" href="./sections/hairstyling.html">HAIR STYLING SECTION</a>
+                      <a class="text-reset" href="./sections/hairstyling.html"
+                        >HAIR STYLING SECTION</a
+                      >
                     </h5>
                   </div>
                 </div>
@@ -433,10 +472,7 @@
               <div class="col-sm-6 col-lg-4 grid-item product branding">
                 <div class="hover-scale hover-bottom-show">
                   <div class="hover-scale-in rounded-3">
-                    <a
-                      href="./sections/braid_section.html"
-                      class=""
-                    >
+                    <a href="./sections/braid_section.html" class="">
                       <img
                         src="./assets/img/images/Braid.png"
                         title=""
@@ -446,12 +482,16 @@
                   </div>
                   <div class="bg-warning p-3 m-2 rounded-3">
                     <div class="nav">
-                      <a  href="./sections/braid_section.html" class="small font-w-600 me-2 text-white"
+                      <a
+                        href="./sections/braid_section.html"
+                        class="small font-w-600 me-2 text-white"
                         >Learn more...</a
                       >
                     </div>
                     <h5 class="mt-1 mb-0">
-                      <a class="text-reset" href="./sections/braid_section.html">BRAID SECTION</a>
+                      <a class="text-reset" href="./sections/braid_section.html"
+                        >BRAID SECTION</a
+                      >
                     </h5>
                   </div>
                 </div>
@@ -459,10 +499,7 @@
               <div class="col-sm-6 col-lg-4 grid-item product branding">
                 <div class="hover-scale hover-bottom-show">
                   <div class="hover-scale-in rounded-3">
-                    <a
-                    href="./sections/natural_hair.html"
-                      class=""
-                    >
+                    <a href="./sections/natural_hair.html" class="">
                       <img
                         src="./assets/img/images/Hair Making.png"
                         title=""
@@ -472,12 +509,16 @@
                   </div>
                   <div class="bg-warning p-3 m-2 rounded-3">
                     <div class="nav">
-                      <a href="./sections/natural_hair.html" class="small font-w-600 me-2 text-white"
+                      <a
+                        href="./sections/natural_hair.html"
+                        class="small font-w-600 me-2 text-white"
                         >Learn more...</a
                       >
                     </div>
                     <h5 class="mt-1 mb-0">
-                      <a class="text-reset" href="./sections/natural_hair.html">NATURAL HAIR SECTION</a>
+                      <a class="text-reset" href="./sections/natural_hair.html"
+                        >NATURAL HAIR SECTION</a
+                      >
                     </h5>
                   </div>
                 </div>
@@ -485,10 +526,7 @@
               <div class="col-sm-6 col-lg-4 grid-item fashion branding">
                 <div class="hover-scale hover-bottom-show">
                   <div class="hover-scale-in rounded-3">
-                    <a
-                      href="./sections/make_up_section.html"
-                      class=""
-                    >
+                    <a href="./sections/make_up_section.html" class="">
                       <img
                         src="./assets/img/images/Makeup2.png"
                         title=""
@@ -498,12 +536,18 @@
                   </div>
                   <div class="bg-warning p-3 m-2 rounded-3">
                     <div class="nav">
-                      <a href="./sections/make_up_section.html" class="small font-w-600 me-2 text-white"
+                      <a
+                        href="./sections/make_up_section.html"
+                        class="small font-w-600 me-2 text-white"
                         >Learn more...</a
                       >
                     </div>
                     <h5 class="mt-1 mb-0">
-                      <a class="text-reset" href="./sections/make_up_section.html">MAKEUP SECTION</a>
+                      <a
+                        class="text-reset"
+                        href="./sections/make_up_section.html"
+                        >MAKEUP SECTION</a
+                      >
                     </h5>
                   </div>
                 </div>
@@ -511,10 +555,7 @@
               <div class="col-sm-6 col-lg-4 grid-item product photoshop">
                 <div class="hover-scale hover-bottom-show">
                   <div class="hover-scale-in rounded-3">
-                    <a
-                      href="./sections/nails_section.html"
-                      class=""
-                    >
+                    <a href="./sections/nails_section.html" class="">
                       <img
                         src="./assets/img/images/Nailss.png"
                         title=""
@@ -524,12 +565,16 @@
                   </div>
                   <div class="bg-warning p-3 m-2 rounded-3">
                     <div class="nav">
-                      <a href="./sections/nails_section.html" class="small font-w-600 me-2 text-white"
+                      <a
+                        href="./sections/nails_section.html"
+                        class="small font-w-600 me-2 text-white"
                         >Learn more...</a
                       >
                     </div>
                     <h5 class="mt-1 mb-0">
-                      <a class="text-reset" href="./sections/nails_section.html">NAILS SECTION</a>
+                      <a class="text-reset" href="./sections/nails_section.html"
+                        >NAILS SECTION</a
+                      >
                     </h5>
                   </div>
                 </div>
@@ -537,21 +582,22 @@
               <div class="col-sm-6 col-lg-4 grid-item product fashion">
                 <div class="hover-scale hover-bottom-show">
                   <div class="hover-scale-in rounded-3">
-                    <a
-                      href="./sections/traditional_spa.html"
-                      class=""
-                    >
+                    <a href="./sections/traditional_spa.html" class="">
                       <img src="./assets/img/images/Pedi.png" title="" alt="" />
                     </a>
                   </div>
                   <div class="bg-warning p-3 m-2 rounded-3">
                     <div class="nav">
-                      <a href="./sections/pedicure_manicure.html" class="small font-w-600 me-2 text-white"
+                      <a
+                        href="./sections/pedicure_manicure.html"
+                        class="small font-w-600 me-2 text-white"
                         >Learn more...</a
                       >
                     </div>
                     <h5 class="mt-1 mb-0">
-                      <a class="text-reset" href="./sections/pedicure_manicure.html"
+                      <a
+                        class="text-reset"
+                        href="./sections/pedicure_manicure.html"
                         >PADICURE AND MANICURE...</a
                       >
                     </h5>
@@ -561,10 +607,7 @@
               <div class="col-sm-6 col-lg-4 grid-item fashion photoshop">
                 <div class="hover-scale hover-bottom-show">
                   <div class="hover-scale-in rounded-3">
-                    <a
-                      href="./sections/traditional_spa.html"
-                      class=""
-                    >
+                    <a href="./sections/traditional_spa.html" class="">
                       <img
                         src="./assets/img/images/Trad-spa2.png"
                         title=""
@@ -574,12 +617,18 @@
                   </div>
                   <div class="bg-warning p-3 m-2 rounded-3">
                     <div class="nav">
-                      <a href="./sections/traditional_spa.html" class="small font-w-600 me-2 text-white"
+                      <a
+                        href="./sections/traditional_spa.html"
+                        class="small font-w-600 me-2 text-white"
                         >Learn more...</a
                       >
                     </div>
                     <h5 class="mt-1 mb-0">
-                      <a class="text-reset" href="./sections/traditional_spa.html">TRADITIONAL SPA</a>
+                      <a
+                        class="text-reset"
+                        href="./sections/traditional_spa.html"
+                        >TRADITIONAL SPA</a
+                      >
                     </h5>
                   </div>
                 </div>
@@ -587,10 +636,7 @@
               <div class="col-sm-6 col-lg-4 grid-item photoshop branding">
                 <div class="hover-scale hover-bottom-show">
                   <div class="hover-scale-in rounded-3">
-                    <a
-                      href="./sections/fashion_section.html"
-                      class=""
-                    >
+                    <a href="./sections/fashion_section.html" class="">
                       <img
                         src="./assets/img/images/Fashion.png"
                         title=""
@@ -600,12 +646,18 @@
                   </div>
                   <div class="bg-warning p-3 m-2 rounded-3">
                     <div class="nav">
-                      <a href="./sections/fashion_section.html" class="small font-w-600 me-2 text-white"
+                      <a
+                        href="./sections/fashion_section.html"
+                        class="small font-w-600 me-2 text-white"
                         >Learn more...</a
                       >
                     </div>
                     <h5 class="mt-1 mb-0">
-                      <a class="text-reset" href="./sections/fashion_section.html">FASHION SECTION</a>
+                      <a
+                        class="text-reset"
+                        href="./sections/fashion_section.html"
+                        >FASHION SECTION</a
+                      >
                     </h5>
                   </div>
                 </div>
@@ -613,10 +665,7 @@
               <div class="col-sm-6 col-lg-4 grid-item photoshop branding">
                 <div class="hover-scale hover-bottom-show">
                   <div class="hover-scale-in rounded-3">
-                    <a
-                    href="./sections/medi_spa.html"
-                      class=""
-                    >
+                    <a href="./sections/medi_spa.html" class="">
                       <img
                         src="./assets/img/images/Med spa.png"
                         title=""
@@ -626,12 +675,16 @@
                   </div>
                   <div class="bg-warning p-3 m-2 rounded-3">
                     <div class="nav">
-                      <a href="./sections/medi_spa.html" class="small font-w-600 me-2 text-white"
+                      <a
+                        href="./sections/medi_spa.html"
+                        class="small font-w-600 me-2 text-white"
                         >Learn more...</a
                       >
                     </div>
                     <h5 class="mt-1 mb-0">
-                      <a class="text-reset" href="./sections/medi_spa.html">MEDI SPA</a>
+                      <a class="text-reset" href="./sections/medi_spa.html"
+                        >MEDI SPA</a
+                      >
                     </h5>
                   </div>
                 </div>
@@ -656,7 +709,15 @@
               <h3 class="h1 mb-3" style="font-family: poppins-bold">
                 Why Choose our Center
               </h3>
-              <p class="lead">At Bold and Beautiful, we believe in providing personalized services that meet your unique needs. We use only the highest quality products and techniques to ensure that you receive the best possible results. Our team of experienced professionals is passionate about helping you achieve your beauty goals in a relaxing and luxurious environment. Come and experience the Bold and Beautiful difference today!</p>
+              <p class="lead">
+                At Bold and Beautiful, we believe in providing personalized
+                services that meet your unique needs. We use only the highest
+                quality products and techniques to ensure that you receive the
+                best possible results. Our team of experienced professionals is
+                passionate about helping you achieve your beauty goals in a
+                relaxing and luxurious environment. Come and experience the Bold
+                and Beautiful difference today!
+              </p>
               <div
                 class="col-lg-5 position-relative counter wow fadeInLeft"
                 data-wow-duration="0.5s"
@@ -793,13 +854,10 @@
                 <h3 class="text-black mb-4 h3" style="font-family: juana">
                   What do you need
                 </h3>
-                <h4
-                  class="text-black h5 mb-4"
-                  style="font-family: poppins-bold"
-                >
+                <h4 class="text-black h5 mb-4" style="">
                   <span
-                    class="typed"
-                    data-elements="MAKE UP SERVICES ?, MASSAGE SERVICES  ?, SPA SERVICES  ?"
+                    class="typed text-white"
+                    data-elements="MAKEUP SERVICES ?, MASSAGE SERVICES  ?, SPA SERVICES  ?"
                   ></span>
                 </h4>
                 <h3 class="text-black mb-4 h5" style="font-family: juana">
@@ -912,7 +970,10 @@
                   BEAUTY PRODUCTS
                 </h3>
                 <p class="mb-3">
-                  We use only top beauty brands to help you achieve your beauty goals. Our salon carries a wide range of products from some of the most trusted brands in the industry, including Redken, Pureology, Moroccanoil, Dermalogica, and more.
+                  We use only top beauty brands to help you achieve your beauty
+                  goals. Our salon carries a wide range of products from some of
+                  the most trusted brands in the industry, including Redken,
+                  Pureology, Moroccanoil, Dermalogica, and more.
                 </p>
                 <ul class="list-type-03 list-unstyled">
                   <li class="d-flex py-1">
@@ -1081,7 +1142,9 @@
               >
                 <h3 class="h1 mb-3 text-poppins-bold">What client says?</h3>
                 <div class="lead">
-                  We take pride in providing exceptional service and results to all of our clients. Here are some testimonials from our satisfied customers:
+                  We take pride in providing exceptional service and results to
+                  all of our clients. Here are some testimonials from our
+                  satisfied customers:
                 </div>
               </div>
             </div>
@@ -1112,7 +1175,10 @@
                   <h6 class="m-0">Client After</h6>
                   <span class="small">- Aisha.</span>
                   <p class="m-0 pt-3">
-                    "I recently visited Bold and Beautiful for a facial, and it was amazing! The esthetician was knowledgeable and skilled, and the products she used were top-notch. My skin has never looked better!"
+                    "I recently visited Bold and Beautiful for a facial, and it
+                    was amazing! The esthetician was knowledgeable and skilled,
+                    and the products she used were top-notch. My skin has never
+                    looked better!"
                   </p>
                 </div>
               </div>
@@ -1129,7 +1195,9 @@
                   <h6 class="m-0">Client Before</h6>
                   <span class="small">– Yemi.</span>
                   <p class="m-0 pt-3">
-                    "Bold and Beautiful is the best salon and spa I've ever been to. The staff is friendly, professional, and knowledgeable. I always leave feeling refreshed and beautiful!"
+                    "Bold and Beautiful is the best salon and spa I've ever been
+                    to. The staff is friendly, professional, and knowledgeable.
+                    I always leave feeling refreshed and beautiful!"
                   </p>
                 </div>
               </div>
@@ -1146,7 +1214,10 @@
                   <h6 class="m-0">Happy Client</h6>
                   <span class="small">- Sarah.</span>
                   <p class="m-0 pt-3">
-                    "I've been going to Bold and Beautiful for years, and I can honestly say that they've helped me achieve my best look. The haircuts and colors are always on point, and the massages and facials are incredibly relaxing."
+                    "I've been going to Bold and Beautiful for years, and I can
+                    honestly say that they've helped me achieve my best look.
+                    The haircuts and colors are always on point, and the
+                    massages and facials are incredibly relaxing."
                   </p>
                 </div>
               </div>
@@ -1193,7 +1264,9 @@
                       Stay focused on your business. Let us handle your beauty.
                     </h5>
                     <div>
-                      At Bold and Beautiful, we are proud to have a team of experienced professionals who are passionate about helping you look and feel your best. 
+                      At Bold and Beautiful, we are proud to have a team of
+                      experienced professionals who are passionate about helping
+                      you look and feel your best.
                     </div>
                   </div>
                 </div>
@@ -1216,7 +1289,9 @@
                 <div class="shadow-lg p-4 bg-white rounded-3 mt-4">
                   <h5 class="h4">We help to create visual strategies</h5>
                   <div class="mb-4">
-                    Our team includes licensed hairstylists, makeup artists, estheticians, and massage therapists who are dedicated to providing personalized services that meet your unique needs.
+                    Our team includes licensed hairstylists, makeup artists,
+                    estheticians, and massage therapists who are dedicated to
+                    providing personalized services that meet your unique needs.
                   </div>
                   <img
                     class="rounded-3 shadow-sm"
@@ -1240,7 +1315,8 @@
                   />
                   <h5 class="h4 mt-4">We help to create visual strategies</h5>
                   <div>
-                    Learn more about our team and their expertise on our website.
+                    Learn more about our team and their expertise on our
+                    website.
                   </div>
                 </div>
               </div>
@@ -1260,7 +1336,11 @@
               >
                 <h3 class="h2 mb-2">Get in Touch</h3>
                 <p class="lead">
-                  If you have any questions or would like to schedule an appointment, please don't hesitate to get in touch with us. You can call us at (insert phone number here), email us at (insert email address here), or fill out our contact form on our website. We look forward to hearing from you!
+                  If you have any questions or would like to schedule an
+                  appointment, please don't hesitate to get in touch with us.
+                  You can call us at (insert phone number here), email us at
+                  (insert email address here), or fill out our contact form on
+                  our website. We look forward to hearing from you!
                 </p>
                 <ul class="list-unstyled mb-0 pt-3 border-bottom pb-2 mb-4">
                   <li class="pb-3 d-flex">
@@ -1292,12 +1372,22 @@
                   </li>
                 </ul>
                 <h3 class="h5 mb-2">Address</h3>
-                <p>Suite SF001, 2nd Floor Israel Plaza, Adetokounbo Ademola Crescent, opposite Kokkies Mall, before Nitel Junction<br />Wuse 2, Abuja Nigeria.</p>
+                <p>
+                  Suite SF001, 2nd Floor Israel Plaza, Adetokounbo Ademola
+                  Crescent, opposite Kokkies Mall, before Nitel Junction<br />Wuse
+                  2, Abuja Nigeria.
+                </p>
                 <div class="pt-1">
-                  <iframe 
-                  class="w-100 min-h-250px"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.9211127353014!2d7.485891514858016!3d9.070951493491815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a55024a9121%3A0x597ff979384cc9cb!2sBold%20And%20Beautiful%20Salon%2FSpa!5e0!3m2!1sen!2sng!4v1677505190573!5m2!1sen!2sng" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                
+                  <iframe
+                    class="w-100 min-h-250px"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3939.9211127353014!2d7.485891514858016!3d9.070951493491815!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104e0a55024a9121%3A0x597ff979384cc9cb!2sBold%20And%20Beautiful%20Salon%2FSpa!5e0!3m2!1sen!2sng!4v1677505190573!5m2!1sen!2sng"
+                    width="600"
+                    height="450"
+                    style="border: 0"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                  ></iframe>
                 </div>
               </div>
               <div
@@ -1314,15 +1404,15 @@
                     </h3>
 
                     <p>
-                      <!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt. -->
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                      sed do eiusmod tempor incididunt.
                     </p>
                     <form
                       class="rd-mailform pt-3"
-                      data-form-output="form-output-global"
+                      data-form-output="form-output-global "
                       data-form-type="contact"
                       method="post"
-                      action="static/vendor/mail/bat/rd-mailform.php"
+                      id="bookingForm"
                     >
                       <div class="row gy-4">
                         <div class="col-sm-6">
@@ -1378,6 +1468,8 @@
                               data-constraints="@Required"
                               style="padding: 5px 15px 5px 15px"
                               required
+                              name="services"
+                              id="contact-services"
                             >
                               <optgroup>
                                 <option value="Hair styling services">
@@ -1432,7 +1524,33 @@
                           >
                             Submit Booking
                           </button>
-                          <div class="snackbars" id="form-output-global"></div>
+
+                          <div class="snackbars active" id="processing">
+                            <p>
+                              <span class="s-icon fa-spin fas fa-spinner"></span
+                              ><span>Sending</span>
+                            </p>
+                          </div>
+                          <div
+                            class="snackbars text-white active success"
+                            id="success"
+                          >
+                            <p>
+                              <span class="s-icon fas fa-check-circle"></span
+                              ><span>Successfully sent!</span>
+                            </p>
+                          </div>
+                          <div
+                            class="snackbars text-white active error"
+                            id="error"
+                          >
+                            <p>
+                              <span
+                                class="s-icon fas fa-exclamation-triangle"
+                              ></span
+                              ><span>Aw, snap! Something went wrong.</span>
+                            </p>
+                          </div>
                         </div>
                       </div>
                     </form>
@@ -1553,10 +1671,25 @@
         </div>
       </footer>
       <!-- End Footer -->
+
+     
     </div>
     <!-- End Wrapper -->
+    
+
     <!-- jquery -->
     <script src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script>
+      const processing = document.getElementById("processing");
+      const success = document.getElementById("success");
+      const error = document.getElementById("error");
+      window.onload = function () {
+        processing.style.display = "none";
+        success.style.display = "none";
+        error.style.display = "none";
+      };
+    </script>
+
     <script src="./assets/js/rotate-image.js"></script>
     <!-- appear -->
     <script src="./assets/vendor/appear/jquery.appear.js"></script>
@@ -1585,6 +1718,7 @@
     <script src="./assets/vendor/mail/js/script.js"></script>
     <!-- Theme Js -->
     <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/firebase-configure.js" type="module"></script>
   </body>
   <!-- end body -->
 </html>

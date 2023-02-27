@@ -1,4 +1,4 @@
-$(function() {
+/* $(function() {
     var rotation = 0, 
         scrollLoc = $(document).scrollTop();
     $(window).scroll(function() {
@@ -12,4 +12,4 @@ $(function() {
             "transform": rotationStr
         });
     });
-})
+}) */
