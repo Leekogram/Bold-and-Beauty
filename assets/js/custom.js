@@ -124,7 +124,7 @@
                     $navdots = ($this.data('nav-dots')) ? $this.data('nav-dots') : false,
                     $navarrow = ($this.data('nav-arrow')) ? $this.data('nav-arrow') : false,
                     $autoplay = ($this.attr('data-autoplay')) ? $this.data('autoplay') : true,
-                    $autospeed = ($this.attr('data-autospeed')) ? $this.data('autospeed') : 5000,
+                    $autospeed = ($this.attr('data-autospeed')) ? $this.data('autospeed') : 3000,
                     $smartspeed = ($this.attr('data-smartspeed')) ? $this.data('smartspeed') : 1000,
                     $autohgt = ($this.data('autoheight')) ? $this.data('autoheight') : false,
                     $CenterSlider = ($this.data('center')) ? $this.data('center') : false,
