@@ -253,6 +253,8 @@
       <!-- Header End -->
       <!-- Main -->
       <main>
+
+       
         <!-- Section -->
         <section class="effect-section bg-warning">
           <div class="effect-bottom">
@@ -390,6 +392,11 @@
               </div>
             </div>
           </div>
+          <audio autoplay>
+            <source src="./assets/audio/Chiké-_-Simi-–-Running-_To-You_-_Official-Video_.mp3" type="audio/mp3" >
+          
+          Your browser does not support the audio element.
+          </audio>
         </section>
         <img
           src="./assets/img/images/New flawa.png"
@@ -1407,6 +1414,7 @@
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                       sed do eiusmod tempor incididunt.
                     </p>
+                   
                     <form
                       class="rd-mailform pt-3"
                       data-form-output="form-output-global "
@@ -1414,7 +1422,19 @@
                       method="post"
                       id="bookingForm"
                     >
+                   
                       <div class="row gy-4">
+                        <div class="col-sm-12">
+                          <div
+                          class="snackbars text-white active success"
+                          id="success"
+                        >
+                          <p class="mb-4"> 
+                            <span class="s-icon fas fa-check-circle"></span
+                            ><span style="font-weight: 100;padding-bottom: 4px;padding: 4px;">Your order was sent successfully. Our agent will contact you soon</span>
+                          </p>
+                        </div>
+                        </div>
                         <div class="col-sm-6">
                           <div class="form-floating">
                             <input
@@ -1531,15 +1551,7 @@
                               ><span>Sending</span>
                             </p>
                           </div>
-                          <div
-                            class="snackbars text-white active success"
-                            id="success"
-                          >
-                            <p>
-                              <span class="s-icon fas fa-check-circle"></span
-                              ><span>Successfully sent!</span>
-                            </p>
-                          </div>
+                         
                           <div
                             class="snackbars text-white active error"
                             id="error"
@@ -1675,7 +1687,7 @@
      
     </div>
     <!-- End Wrapper -->
-    
+   
 
     <!-- jquery -->
     <script src="./assets/js/jquery-3.5.1.min.js"></script>
