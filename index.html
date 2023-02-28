@@ -18,13 +18,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <style>
-      .subscribe{
+       .subscribe{
         padding: 10%;
       }
       .cloudy {
         position: absolute;
-        top: 7%;
+        top: 6.4%;
         left: 0%;
+        width: 100%;
         transform: skewY(-2deg);
         transform-origin: right bottom;
       }
@@ -57,6 +58,12 @@
 
         line-height: 50px;
         color: #fff6e6;
+      }
+      .rotateImage{
+        transition: width 2s, height 2s, transform 2s;
+      }
+      .rotateImage:hover{
+        transform: rotate(180deg);
       }
 
       @-webkit-keyframes float {
@@ -111,8 +118,8 @@
         width: 150px;
         z-index: -1px;
         transform: translatey(0px);
-        -webkit-animation: float 8s ease-in-out infinite;
-        animation: float 8s ease-in-out infinite;
+        -webkit-animation: float 5s ease-in-out infinite;
+        animation: float 5s ease-in-out infinite;
       }
 
       .productsImage {
@@ -145,18 +152,47 @@
 
         .second-pink {
           position: absolute;
-
+ 
           top: 52%;
           left: 70%;
           height: 80px;
           width: 80px;
         }
-        .cloudy {
+          .cloudy {
           position: absolute;
-          top: 6.2%;
+          top: 6.3%;
           left: 0%;
           transform: skewY(-7deg);
           transform-origin: right bottom;
+        }  
+      } 
+      @media screen and (max-width: 360px) {
+    
+    .cloudy {
+       
+          position: absolute;
+          top: 6.1%;
+          left: 0%;
+          transform: skewY(-8deg);
+          transform-origin: right bottom;
+          
+        }  
+        .firstred {
+          position: absolute;
+          bottom: 0;
+          top: 7%;
+          left: 0%;
+          height: 70px;
+          width: 80px;
+        }
+
+        .second-pink {
+          position: absolute;
+ 
+          top: 52%;
+          left: 70%;
+          height: 70px;
+          width: 70px;
         }
       }
     </style>
@@ -260,7 +296,7 @@
        
         <!-- Section -->
         <section class="effect-section bg-warning">
-          <audio autoplay>
+          <audio >
             <source src="./assets/audio/Chiké-_-Simi-–-Running-_To-You_-_Official-Video_.mp3" type="audio/mp3" >
           
           Your browser does not support the audio element.
@@ -274,7 +310,7 @@
             />
           </div>
 
-          <div class="container">
+          <div class="container ">
             <div class="firstred layer1 rotate-image">
               <img
                 src="./assets/img/images/First red.png"
@@ -292,7 +328,7 @@
               />
             </div>
 
-            <div class="row py-10" style="height: 120vh">
+            <div class="row py-10 100vh" >
               <div
                 class="col-lg-6 col-xl-5 py-8 me-auto wow fadeInUp"
                 data-wow-duration="0.5s"
@@ -334,10 +370,10 @@
               <div
                 class="col-lg-6 wow fadeInUp"
                 data-wow-duration="0.5s"
-                data-wow-delay="0.1s"
+                data-wow-delay="0.1s" 
               >
                 <div
-                  class="owl-carousel owl-nav-rounded"
+                  class="owl-carousel owl-nav-rounded "
                   data-items="1"
                   data-nav-dots="false"
                   data-nav-arrow="false"
@@ -399,15 +435,20 @@
                 </div>
               </div>
             </div>
+          
           </div>
+
+         
          
         </section>
+
         <img
-          src="./assets/img/images/New flawa.png"
-          title="cloudy"
-          alt="cloudy"
-          class="cloudy"
-        />
+        src="./assets/img/images/New flawa.png"
+        title="cloudy"
+        alt="cloudy"
+        class="cloudy"
+      />
+       
 
         <!-- Section -->
         <section class="section effect-section">
@@ -989,17 +1030,15 @@
                 <ul class="list-type-03 list-unstyled">
                   <li class="d-flex py-1">
                     <i class="bi bi-check-circle-fill text-warning me-2"></i>
-                    We assist efficient business management
+                    Enhance your beauty naturally at our salon with all-natural products.
                   </li>
                   <li class="d-flex py-1">
                     <i class="bi bi-check-circle-fill text-warning me-2"></i>
-                    We identify your requirements and design an ideal
-                    relationship structure to fit your needs
+                    Nature's power revitalizes with our natural products at the beauty salon.
                   </li>
                   <li class="d-flex py-1">
                     <i class="bi bi-check-circle-fill text-warning me-2"></i>
-                    Our latest thinking on the issues that matter most in
-                    business
+                    Chemical-free natural products used for beauty inside and out at our salon.
                   </li>
                 </ul>
                 <div class="mt-3">
@@ -1017,7 +1056,7 @@
                 data-wow-delay="0.1s"
               >
                 <div
-                  class="owl-carousel owl-nav-rounded"
+                  class="owl-carousel owl-nav-rounded "
                   data-items="1"
                   data-nav-dots="false"
                   data-nav-arrow="true"
@@ -1112,8 +1151,7 @@
                   Stay focused on your business. Let us handle your beauty.
                 </h3>
                 <p class="text-white lead mb-4">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Our team's goal is to make every client feel like the most beautiful version of themselves.
                 </p>
                 <div class="pt-3 d-flex">
                   <a class="me-3" href="#"
@@ -1258,8 +1296,7 @@
                   Meet our Team
                 </h3>
                 <div class="lead">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Discover the confidence-boosting power of our salon and spa services with our expert team.
                 </div>
               </div>
             </div>
@@ -1272,7 +1309,7 @@
                 <div class="col-lg-6 pe-xl-12">
                   <div class="p-lg-3">
                     <h5 class="h3">
-                      Stay focused on your business. Let us handle your beauty.
+                      Let our team of skilled professionals take care of all your beauty needs.
                     </h5>
                     <div>
                       At Bold and Beautiful, we are proud to have a team of
@@ -1298,7 +1335,7 @@
                 data-wow-delay="0.1s"
               >
                 <div class="shadow-lg p-4 bg-white rounded-3 mt-4">
-                  <h5 class="h4">We help to create visual strategies</h5>
+                  <h5 class="h4">Passionate about beauty.</h5>
                   <div class="mb-4">
                     Our team includes licensed hairstylists, makeup artists,
                     estheticians, and massage therapists who are dedicated to
@@ -1324,7 +1361,7 @@
                     title=""
                     alt=""
                   />
-                  <h5 class="h4 mt-4">We help to create visual strategies</h5>
+                  <h5 class="h4 mt-4">Skilled professionals at your fingertips.</h5>
                   <div>
                     Learn more about our team and their expertise on our
                     website.
@@ -1415,8 +1452,7 @@
                     </h3>
 
                     <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt.
+                      Book with confidence knowing we offer a satisfaction, guarantee and exceptional services
                     </p>
                    
                     <form
