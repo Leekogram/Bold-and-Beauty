@@ -119,9 +119,7 @@
       }
      
 
-      body {
-        /* font-family: poppins-medium; */
-      }
+     
       .navoption {
         color: #000;
       }
@@ -182,7 +180,7 @@
               <div class="container">
                 <!-- Logo -->
                 <div>
-                  <a class="navbar-brand" href="./index.html">
+                  <a class="navbar-brand" href="../index.html">
                     <img
                       class="logo-light"
                       src="../assets/img/images/logo3.png"
@@ -322,134 +320,36 @@
                       >
                         <div class="card shadow-lg">
                           <div class="card-body p-lg-4">
-                            <h3 class="h5 mb-3">
-                              <span class="h5" style="font-weight: 100"> BOOK AN </span
-                              >APPOINTMENT
-                            </h3>
-        
-                            <p>
-                              <!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                              sed do eiusmod tempor incididunt. -->
-                            </p>
-                            <form
-                              class="rd-mailform pt-3"
-                              data-form-output="form-output-global"
-                              data-form-type="contact"
-                              method="post"
-                              action="static/vendor/mail/bat/rd-mailform.php"
-                            >
-                              <div class="row gy-4">
-                                <div class="col-sm-6">
-                                  <div class="form-floating">
-                                    <input
-                                      id="contact-name"
-                                      type="text"
-                                      name="name"
-                                      placeholder="Rachel Roth"
-                                      data-constraints="@Required"
-                                      class="form-control"
-                                    />
-                                    <label class="form-label" for="contact-name"
-                                      >Full Name</label
-                                    >
+                            
+                         
+                                <div
+                                  class="col-lg-13 col-xl-12"
+                                  data-wow-duration="0.5s"
+                                  data-wow-delay="0.1s"
+                                >
+                                  <h3 class="text-black h1 mb-3">
+                                    Stay focused on your business. Let us handle your fashion.
+                                  </h3>
+                                  <p class="text-black lead mb-4">
+                                    Download our App and experience our collection of Fashion wears.
+                                  </p>
+                                  <div class="pt-3 d-flex">
+                                    <a class="me-3" href="#"
+                                      ><img
+                                        src="../assets/img/effect/playstore.png"
+                                        title=""
+                                        alt=""
+                                    /></a>
+                                    <a href="#"
+                                      ><img
+                                        src="../assets/img/effect/apple-store.png"
+                                        title=""
+                                        alt=""
+                                    /></a>
                                   </div>
                                 </div>
-                                <div class="col-sm-6">
-                                  <div class="form-floating">
-                                    <input
-                                      id="contact-email"
-                                      type="email"
-                                      name="email"
-                                      placeholder="name@example.com"
-                                      data-constraints="@Required"
-                                      class="form-control"
-                                    />
-                                    <label class="form-label" for="contact-email"
-                                      >Email Address</label
-                                    >
-                                  </div>
-                                </div>
-        
-                                <div class="col-sm-6">
-                                  <div class="form-floating">
-                                    <input
-                                      type="tel"
-                                      name="contact-phone"
-                                      class="form-control"
-                                      placeholder="+234 888 888 6666"
-                                      id="contact-phone"
-                                      data-constraints="@Required"
-                                    />
-                                    <label class="form-label" for="contact-phone"
-                                      >Phone</label
-                                    >
-                                  </div>
-                                </div>
-                                <div class="col-sm-6">
-                                  <div class="form-floating">
-                                    <select
-                                      class="form-select"
-                                      data-constraints="@Required"
-                                      style="padding: 5px 15px 5px 15px"
-                                      required
-                                    >
-                                      <optgroup>
-                                        <option value="Hair styling services">
-                                          Select a service
-                                        </option>
-                                        <option value="Hair styling services">
-                                          Hair styling services
-                                        </option>
-                                        <option value="Braid services">
-                                          Braid services
-                                        </option>
-                                        <option value="Nail Services">
-                                          Nail Services
-                                        </option>
-                                        <option value="Makeup services">
-                                          Makeup services
-                                        </option>
-                                        <option value="Pedicure & manicure">
-                                          Pedicure & manicure services
-                                        </option>
-                                        <option value="Traditional Spa">
-                                          Traditional spa services
-                                        </option>
-                                        <option value="Medi spa">
-                                          Medi spa services
-                                        </option>
-                                      </optgroup>
-                                    </select>
-                                  </div>
-                                </div>
-                                <div class="col-12">
-                                  <div class="form-floating">
-                                    <textarea
-                                      class="form-control"
-                                      id="contact-message"
-                                      name="message"
-                                      rows="3"
-                                      placeholder="Hi there, I would like to ..."
-                                      data-constraints="@Required"
-                                      style="height: 150px"
-                                    ></textarea>
-                                    <label class="form-label" for="contact-message"
-                                      >Instructions</label
-                                    >
-                                  </div>
-                                </div>
-                                <div class="col-12">
-                                  <button
-                                    class="btn btn-black curved"
-                                    type="submit"
-                                    name="send"
-                                  >
-                                    Submit Booking
-                                  </button>
-                                  <div class="snackbars" id="form-output-global"></div>
-                                </div>
-                              </div>
-                            </form>
+                             
+                          
                           </div>
                         </div>
                       </div>
@@ -620,6 +520,8 @@
     <script src="../assets/vendor/mail/js/script.js"></script>
     <!-- Theme Js -->
     <script src="../assets/js/custom.js"></script>
+    <script type = "text/JavaScript" src = " https://MomentJS.com/downloads/moment.js"></script>
+    <script src="../assets/js/firebase/handle-booking.js" type="module"></script>
 </body>
 <!-- end body -->
 

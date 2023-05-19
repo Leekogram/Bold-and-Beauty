@@ -119,9 +119,6 @@
       }
      
 
-      body {
-        /* font-family: poppins-medium; */
-      }
       .navoption {
         color: #000;
       }
@@ -182,7 +179,7 @@
               <div class="container">
                 <!-- Logo -->
                 <div>
-                  <a class="navbar-brand" href="./index.html">
+                  <a class="navbar-brand" href="../index.html">
                     <img
                       class="logo-light"
                       src="../assets/img/images/logo3.png"
@@ -328,17 +325,19 @@
                             </h3>
         
                             <p>
-                              <!--      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                              sed do eiusmod tempor incididunt. -->
+                              Book with confidence knowing we offer a satisfaction, guarantee and exceptional services
                             </p>
+                           
                             <form
                               class="rd-mailform pt-3"
-                              data-form-output="form-output-global"
+                              data-form-output="form-output-global "
                               data-form-type="contact"
                               method="post"
-                              action="static/vendor/mail/bat/rd-mailform.php"
+                              id="bookingForm"
                             >
+                           
                               <div class="row gy-4">
+                              
                                 <div class="col-sm-6">
                                   <div class="form-floating">
                                     <input
@@ -389,39 +388,46 @@
                                   <div class="form-floating">
                                     <select
                                       class="form-select"
-                                      data-constraints="@Required"
                                       style="padding: 5px 15px 5px 15px"
-                                      required
+                                  
+                                      name="services"
+                                      id="contact-services"
                                     >
-                                      <optgroup>
-                                        <option value="Hair styling services">
-                                          Select a service
-                                        </option>
-                                        <option value="Hair styling services">
-                                          Hair styling services
-                                        </option>
-                                        <option value="Braid services">
-                                          Braid services
-                                        </option>
-                                        <option value="Nail Services">
-                                          Nail Services
-                                        </option>
-                                        <option value="Makeup services">
-                                          Makeup services
-                                        </option>
-                                        <option value="Pedicure & manicure">
-                                          Pedicure & manicure services
-                                        </option>
-                                        <option value="Traditional Spa">
-                                          Traditional spa services
-                                        </option>
-                                        <option value="Medi spa">
-                                          Medi spa services
-                                        </option>
-                                      </optgroup>
+                                     
                                     </select>
                                   </div>
                                 </div>
+                                <div class="col-sm-6">
+                                  <div class="form-floating">
+                                    <input
+                                      id="contact-time"
+                                      type="time"
+                                      name="time"
+                                      placeholder="12:00 PM"
+                                      data-constraints="@Required"
+                                      class="form-control"
+                                    />
+                                    <label class="form-label" for="contact-time"
+                                      >Time</label
+                                    >
+                                  </div>
+                                </div>
+                                <div class="col-sm-6">
+                                  <div class="form-floating">
+                                    <input
+                                      id="contact-date"
+                                      type="date"
+                                      name="date"
+                                      placeholder="22/03/2023"
+                                      data-constraints="@Required"
+                                      class="form-control"
+                                    />
+                                    <label class="form-label" for="contact-date"
+                                      >Date</label
+                                    >
+                                  </div>
+                                </div>
+        
                                 <div class="col-12">
                                   <div class="form-floating">
                                     <textarea
@@ -446,7 +452,36 @@
                                   >
                                     Submit Booking
                                   </button>
-                                  <div class="snackbars" id="form-output-global"></div>
+        
+                                  <div class="snackbars active" id="processing">
+                                    <p>
+                                      <span class="s-icon fa-spin fas fa-spinner"></span
+                                      ><span>Sending</span>
+                                    </p>
+                                  </div>
+                                 
+                                  <div
+                                    class="snackbars text-white active error"
+                                    id="error"
+                                  >
+                                    <p>
+                                      <span
+                                        class="s-icon fas fa-exclamation-triangle"
+                                      ></span
+                                      ><span>Aw, snap! Something went wrong.</span>
+                                    </p>
+                                  </div>
+                                  <div class="col-sm-12">
+                                    <div
+                                    class="snackbars text-white active success"
+                                    id="success"
+                                  >
+                                    <p class="mb-4"> 
+                                      <span class="s-icon fas fa-check-circle"></span
+                                      ><span style="font-weight: 100;padding-bottom: 4px;padding: 4px;">Your order was sent successfully. Our agent will contact you soon</span>
+                                    </p>
+                                  </div>
+                                  </div>
                                 </div>
                               </div>
                             </form>
@@ -588,10 +623,12 @@
     <!-- End Wrapper -->
     <!-- jquery -->
     <script src="../assets/js/jquery-3.5.1.min.js"></script>
+    
     <!-- rotating flower controller -->
     <script src="../assets/js/rotate-image.js"></script>
 
     <script  src="../assets/js/modal_controller.js"></script>
+    <!-- <script src="../assets/js/hide_alert.js"></script> -->
  
     <!-- appear -->
     <script src="../assets/vendor/appear/jquery.appear.js"></script>
@@ -620,6 +657,8 @@
     <script src="../assets/vendor/mail/js/script.js"></script>
     <!-- Theme Js -->
     <script src="../assets/js/custom.js"></script>
+    <script type = "text/JavaScript" src = " https://MomentJS.com/downloads/moment.js"></script>
+    <script src="../assets/js/firebase/handle-booking.js" type="module"></script>
 </body>
 <!-- end body -->
 
