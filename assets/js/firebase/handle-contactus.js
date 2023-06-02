@@ -47,12 +47,14 @@ function submitForm(e) {
   var name = getInputVal("contact-name");
   var email = getInputVal("contact-email");
   var phone = getInputVal("contact-phone");
+  var subject = getInputVal("contact-subject");
   var message = getInputVal("contact-message");
 
   sendMessage(
     name,
     email,
     phone,
+    subject,
     message
   );
 }
@@ -68,6 +70,7 @@ async function sendMessage(
   name,
   email,
   phone,
+  subject,
   message
 ) {
   // Add a new document with a generated id.
@@ -77,6 +80,7 @@ async function sendMessage(
     emailAddress: email,
     phoneNumber: phone,
     sourceType: "from Web",
+    subject:subject,
     message: message,
     createdBy: serverTimestamp(),
   })
