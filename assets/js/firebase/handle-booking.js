@@ -80,7 +80,7 @@ async function sendOrder(
 ) {
   // Add a new document with a generated id.
   await addDoc(collection(database, "bookings"), {
-    orderId:generateRandomOrderId(),
+    bookingId:generateRandomOrderId(),
     name: name,
     email: email,
     phone: phone,
@@ -88,7 +88,7 @@ async function sendOrder(
     bookdate: bookdate,
     booktime: booktime,
     sourceType: "from Web",
-    status: "Pending",
+    status: "New",
     instruction: instruction,
     timestamp: serverTimestamp(),
   })
