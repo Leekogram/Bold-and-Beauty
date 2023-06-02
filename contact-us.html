@@ -304,20 +304,27 @@
                             <div class="pb-4">
                                 <h5 class="m-0">Contact Us</h5>
                             </div>
-                            <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" action="static/vendor/mail/bat/rd-mailform.php" novalidate="novalidate">
+                            <form class="rd-mailform" data-form-output="form-output-global" data-form-type="contact" method="post" id="contact-us-form">
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group mb-3">
                                             <label class="form-label">Name</label>
-                                            <input id="contact-name" type="text" name="name" placeholder="" data-constraints="@Required" class="form-control form-control-has-validation form-control-last-child">
+                                            <input id="contact-name" type="text" name="name" placeholder="" data-constraints="@Required" class="form-control form-control-has-validation form-control-last-child" >
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group mb-3">
                                             <label class="form-label">Email address</label>
-                                            <input id="contact-email" type="email" name="email" placeholder="@email.com" data-constraints="@Required" class="form-control form-control-has-validation form-control-last-child">
+                                            <input id="contact-email" type="email" name="email" placeholder="@email.com" data-constraints="@Required" class="form-control form-control-has-validation form-control-last-child" >
                                         </div>
                                     </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group mb-3">
+                                            <label class="form-label">Phone number</label>
+                                            <input id="contact-phone" type="tel" name="phone" placeholder="+23412345678" data-constraints="@Required" class="form-control form-control-has-validation form-control-last-child" >
+                                        </div>
+                                    </div>
+                                    
                                     <div class="col-md-12">
                                         <div class="form-group mb-3">
                                             <label class="form-label">Comment</label>
@@ -325,9 +332,44 @@
                                         </div>
                                     </div>
                                     <div class="col-md-12 pt-2">
-                                        <button class="btn btn-black" type="submit" name="send">Send Message<i class="fab fa-chat"></i
+                                        <button class="btn btn-black" type="submit" id="send" name="send">Send Message<i class="fab fa-chat"></i
                                             ></button>
-                                        <div class="snackbars" id="form-output-global"></div>
+                                            <div class="snackbars active" id="processing">
+                                              <p>
+                                                <span class="s-icon fa-spin fas fa-spinner"></span
+                                                ><span>Sending</span>
+                                              </p>
+                                            </div>
+                  
+                                            <div
+                                              class="snackbars text-white active error"
+                                              id="error"
+                                            >
+                                              <p>
+                                                <span
+                                                  class="s-icon fas fa-exclamation-triangle"
+                                                ></span
+                                                ><span>Aw, snap! Something went wrong.</span>
+                                              </p>
+                                            </div>
+                                            <div class="col-sm-12">
+                                              <div
+                                                class="snackbars text-white active success"
+                                                id="success"
+                                              >
+                                                <p class="mb-4">
+                                                  <span class="s-icon fas fa-check-circle"></span
+                                                  ><span
+                                                    style="
+                                                      font-weight: 100;
+                                                      padding-bottom: 4px;
+                                                      padding: 4px;
+                                                    "
+                                                    >Your message was sent successfully. Our salon representative will contact you soon.</span
+                                                  >
+                                                </p>
+                                              </div>
+                                            </div>
                                     </div>
                                 </div>
                             </form>
@@ -497,6 +539,7 @@
     <!-- <script src="./assets/js/rotate-image.js"></script>
 
     <script  src="./assets/js/modal_controller.js"></script> -->
+    <script src="./assets/js/hide_alert.js"></script>
  
     <!-- appear -->
     <script src="./assets/vendor/appear/jquery.appear.js"></script>
@@ -525,6 +568,7 @@
     <script src="./assets/vendor/mail/js/script.js"></script>
     <!-- Theme Js -->
     <script src="./assets/js/custom.js"></script>
+    <script src="./assets/js/firebase/handle-contactus.js" type="module"></script>
 </body>
 <!-- end body -->
 
