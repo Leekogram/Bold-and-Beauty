@@ -137,6 +137,33 @@
         color: #000;
       }
 
+      .scroll-to-top {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      z-index: 9999;
+      width: 50px;
+      height: 50px;
+      border-radius: 10%;
+      background-color: #00000065;
+      color: #fff;
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .scroll-to-top:hover {
+      background-color: #333;
+    }
+
+    .scroll-to-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
       @media screen and (max-width: 600px) {
         .firstred {
           position: absolute;
@@ -193,7 +220,10 @@
   </head>
 
   <body>
-    <!-- Skippy -->
+<!-- Scroll-to-top button -->
+<div class="scroll-to-top" onclick="scrollToTop()">
+  <i class="fas fa-arrow-up"></i>
+</div>
     <a id="skippy" class="sr-only sr-only-focusable u-skippy" href="#content">
       <div class="container">
         <span class="u-skiplink-text">Skip to main content</span>
@@ -1716,7 +1746,10 @@
                 class="nav justify-content-center justify-content-md-start my-2 small list-unstyled footer-link-01 m-0"
               >
                 <li class="p-0 mx-3 ms-md-0 me-md-3">
-                  <a href="/" class="text-black"> Privacy &amp; Policy </a>
+                  <a href="./terms_and_condition.html" class="text-black"> Terms &amp; Conditions </a>
+                </li>
+                <li class="p-0 mx-3 ms-md-0 me-md-3">
+                  <a href="./terms_and_condition.html" class="text-black"> Privacy &amp; Policy </a>
                 </li>
                 <li class="p-0 mx-3 ms-md-0 me-md-3">
                   <a href="/" class="text-black"> Faq's </a>
@@ -1740,6 +1773,22 @@
 
     <!-- jquery -->
     <script src="./assets/js/jquery-3.5.1.min.js"></script>
+       <!-- Scripts -->
+       <script>
+        // Show/hide scroll-to-top button on scroll
+        $(window).scroll(function() {
+          if ($(this).scrollTop() > 200) {
+            $('.scroll-to-top').addClass('show');
+          } else {
+            $('.scroll-to-top').removeClass('show');
+          }
+        });
+    
+        // Scroll to top function
+        function scrollToTop() {
+          $('html, body').animate({ scrollTop: 0 }, 'slow');
+        }
+      </script>
 
     <script src="./assets/js/hide_alert.js"></script>
     <script src="./assets/js/rotate-image.js"></script>
